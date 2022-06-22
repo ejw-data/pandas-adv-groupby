@@ -19,7 +19,7 @@ An example of how to use pandas dataframes to find ordered data is provided.  In
 <br>
 
 ## Status
-Some touchup will be made to the code but the content for this activity is complete.  
+Some touchup will be made to the code but the content for this activity is mostly complete.  
 
 <br>
 
@@ -47,15 +47,18 @@ Grimi94 (April 8, 2016). data-science-music (commit 7779de0).    https://github.
 <br>
 
 ## Analysis  
+There is no real analysis to provide.  The take aways of the activity show the following:  
+*  `.groupby(column)` starts at the top of the dataframe and adds the values to lists for each column.  In Fig.1, the top path shows a groupby of by one column (last name) with only one other column(first name).  The order of the values in the list is based on the order that the data appears in the dataframe.  
+*  `.sort_values(by=column, ascending=True).groupby(column)` first sorts the datafram from smallest to largest value for numerical values or from a-z for text values for the specified column.  Next, the data is grouped based on the order of the data from the top of the dataframe to the bottom of the dataframe.  
+*  `.sort_values(by=column, ascending=False).groupby(column)` first sorts the dataframe from largest to smallest value for numerical values or from z-a for text values for the specified column.  Next, the data is grouped based on the order of the data from the top of the dataframe to the bottom of the dataframe.  
 
+<figure>
 
-<br>
+![Groupby Diagram](./images/groupby-diagram1.png)
+<figcaption>Fig.1 - Diagram of what sorting, groupby, and list methods do</figcaption>
+</figure>
 
-## Notable Revisions
-| Change Date | Description |  
-|--- | --- |    
-| 1/1/2020 | Updated readme |  
-| 6/15/2021 | Split repo into two parts - 1) Sales, 2) Education |
+*  list methods like `.head(x)` can be used to obtain the first x values.
+*  list methods like `.apply(list)` conver the groupby into lists.  This is helpful when you need a list of lists such as inputs for pandas boxplots. 
 
-<br>
 <br>
