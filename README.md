@@ -48,8 +48,8 @@ Grimi94 (April 8, 2016). data-science-music (commit 7779de0).    https://github.
 
 ## Analysis  
 There is no real analysis to provide.  The take aways of the activity show the following:  
-*  `.groupby(column)` starts at the top of the dataframe and adds the values to lists for each column.  In Fig.1, the top path shows a groupby of by one column (last name) with only one other column(first name).  The order of the values in the list is based on the order that the data appears in the dataframe.  
-*  `.sort_values(by=column, ascending=True).groupby(column)` first sorts the datafram from smallest to largest value for numerical values or from a-z for text values for the specified column.  Next, the data is grouped based on the order of the data from the top of the dataframe to the bottom of the dataframe.  
+*  `.groupby(column)` starts at the top of the dataframe and adds the values to new dataframe for each column.  In Fig.1, the top path shows a groupby of by one column (last name) with only one other column(first name).  The order of the values in the list is based on the order that the data appears in the dataframe.  
+*  `.sort_values(by=column, ascending=True).groupby(column)` first sorts the dataframe from smallest to largest value for numerical values or from a-z for text values for the specified column.  Next, the data is grouped based on the order of the data from the top of the dataframe to the bottom of the dataframe.  
 *  `.sort_values(by=column, ascending=False).groupby(column)` first sorts the dataframe from largest to smallest value for numerical values or from z-a for text values for the specified column.  Next, the data is grouped based on the order of the data from the top of the dataframe to the bottom of the dataframe.  
 
 <figure>
