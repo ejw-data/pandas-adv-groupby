@@ -14,7 +14,7 @@
 
 In this file, we import in a file of historical songs and their annual rankings by year.  The data file has several issues that need resolved before applying a groupby.  
 
-An example of how to use pandas dataframes to find ordered data is provided.  In this case, we order the data by the 'Annual Ranking' and then find the first two rows of each year.  This is a nice example that shows how groupby's work.  
+An example of how to use pandas dataframes to find ordered data is provided.  In this case, we order the data by the 'Annual Ranking' and then find the first two rows of each year.  This is a nice example that shows how the groupby method works.  
 
 <br>
 
@@ -54,11 +54,11 @@ There is no real analysis to provide.  The take aways of the activity show the f
 
 <figure>
 
-![Groupby Diagram](./images/groupby-diagram1.png)
+![Groupby Diagram](./images/groupby-diagram2.png)
 <figcaption>Fig.1 - Diagram of what sorting, groupby, and list methods do</figcaption>
 </figure>
 
-*  list methods like `.head(x)` can be used to obtain the first x values.
-*  list methods like `.apply(list)` conver the groupby into lists.  This is helpful when you need a list of lists such as inputs for pandas boxplots. 
+*  series methods like `.head(x)` can be used to obtain the first x values.
+*  series methods like `.apply(list)` convert the groupby object into lists.  This is helpful when you need a list of lists such as inputs for pandas boxplots. 
 
 <br>
